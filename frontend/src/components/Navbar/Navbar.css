@@ -8,7 +8,27 @@
 .navbar .logo {
     width: 150px;
 }
-
+.header-title {
+    font-size: 1.5rem; /* Equivalent to 'text-2xl' */
+    padding: 0.5rem;   /* Equivalent to 'px-2' */
+    font-weight: normal; /* Ensures default weight for 'Yum' */
+  }
+  
+  @media (min-width: 640px) { /* sm breakpoint */
+    .header-title {
+      font-size: 1.875rem; /* Equivalent to 'text-3xl' */
+    }
+  }
+  
+  @media (min-width: 1024px) { /* lg breakpoint */
+    .header-title {
+      font-size: 2.25rem; /* Equivalent to 'text-4xl' */
+    }
+  }
+  
+  .header-bold {
+    font-weight: bold; /* Ensures 'Eats' is bold */
+  }
 .navbar-menu {
     display: flex;
     list-style: none;
